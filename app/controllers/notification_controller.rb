@@ -9,7 +9,7 @@ class NotificationController < ApplicationController
             title: params[:title]
         }
     }
-    response = GcmExtension.client.send(registration_ids, options)
+    response = GcmExtension.instance.client.send(registration_ids, options)
     render json: response, status: 200
   end
 end

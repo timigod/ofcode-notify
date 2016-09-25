@@ -12,4 +12,5 @@ class GcmExtension
   def client
     return @client
   end
+
 end
