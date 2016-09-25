@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
 
   def create
     param! :uid, String, required: true
